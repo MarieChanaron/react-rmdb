@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 // Config
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
@@ -7,6 +7,8 @@ import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import HeroImage from './HeroImage';
 import Grid from './Grid';
 import Thumb from './Thumb';
+import Spinner from './Spinner';
+import SearchBar from './SearchBar';
 
 // Hooks
 import { useHomeFetch } from '../hooks/useHomeFetch';
@@ -30,6 +32,7 @@ function Home() {
                 />
                 : null         
             }
+            <SearchBar />
             <Grid header='Popular Movies'>
                 {
                     state.results.map(
@@ -38,7 +41,7 @@ function Home() {
                                 <Thumb 
                                     key={movie.id}
                                     clickable
-                                    image='https://thumbs.dreamstime.com/z/sun-2972259.jpg'
+                                    image = {movie.poster_path? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path : NoImage}
                                     movieId={movie.id}
                                 />
                             )
@@ -46,6 +49,9 @@ function Home() {
                     )
                 }
             </Grid>
+
+            <Spinner display={loading} />
+            
         </>
     );
    
