@@ -16,16 +16,17 @@ export const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
         font-family: 'Abel', sans-serif;
+        margin: 0;
+        padding: 0;
     }
 
     body {
-        margin: 0;
-        padding: 0;
 
         h1{
             font-size: 2rem;
             font-weight: 600;
             color: var(--white);
+            margin-bottom: 20px;
         }
 
         h3 {
