@@ -18,16 +18,16 @@ const defaultConfig = {
 const apiSettings = {
   fetchMovies: async (searchTerm, page) => {
     const endpoint = searchTerm
-    ? `${SEARCH_BASE_URL}${searchTerm}&page=${page}`  // 'https://api.themoviedb.org/3/discover/movie?api_key=4577eea1d6171d329385f0ed0fb84cc1';
-    : `${POPULAR_BASE_URL}&page=${page}`;             // 'https://api.themoviedb.org/3/trending/all/week?api_key=4577eea1d6171d329385f0ed0fb84cc1';
+    ? `${SEARCH_BASE_URL}${searchTerm}&page=${page}` 
+    : `${POPULAR_BASE_URL}&page=${page}`;            
     return await (await fetch(endpoint)).json();
   },
   fetchMovie: async movieId => {
-    const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}`;
+    const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}&language=fr-FR&query=`;
     return await (await fetch(endpoint)).json();
   },
   fetchCredits: async movieId => {
-    const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`;
+    const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}&language=fr-FR&query=`;
     return await (await fetch(creditsEndpoint)).json();
   },
   // Bonus material below for login

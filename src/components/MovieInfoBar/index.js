@@ -18,7 +18,7 @@ function MovieInfoBar({time, budget, revenue}) {
                 <p>Budget: {convertMoney(budget)}</p>
             </div>
             <div className='column'>
-                <p>Revenue: {convertMoney(revenue)}</p>
+                <p>Revenu: {convertMoney(revenue)}</p>
             </div>
         </Content>
     </Wrapper>
