@@ -53,7 +53,7 @@ export const Text = styled.div`
     color: black;
     font-weight: 800;
     border-radius: 50%;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .director {

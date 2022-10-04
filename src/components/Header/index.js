@@ -8,7 +8,7 @@ import {Wrapper, Content, LogoImg, TMDBLogoImg} from './Header.styles';
 
 function Header() {
     return (
-        <Wrapper id="header-wrapper">
+        <Wrapper>
             <Content>
                 <Link to='/'>
                     <LogoImg src={RMDBLogo} alt='rmdb-logo' />

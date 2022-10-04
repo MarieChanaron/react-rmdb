@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Components
 import Thumb from '../Thumb';
@@ -31,7 +32,7 @@ function MovieInfo({movie}) {
                 <div className='rating-directors'>
                     <div>
                         <h3>NOTATION</h3>
-                        <div className='score'>{movie.vote_average}</div>
+                        <p className='score'>{movie.vote_average}</p>
                     </div>
                     <div className='director'>
                         <h3>DIRECTEUR{movie.directors.length > 1 ? 'S' : ''}</h3>
@@ -44,6 +45,10 @@ function MovieInfo({movie}) {
         </Content>
     </Wrapper>
   )
+}
+
+MovieInfo.propTypes = {
+    movie: PropTypes.object
 }
 
 export default MovieInfo;
