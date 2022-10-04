@@ -13,6 +13,9 @@ import NoImage from '../../images/no_image.jpg';
 // Styles
 import { Wrapper, Content, Text} from './MovieInfo.styles';
 
+// Helper
+import { roundsToFirstDecimal } from '../../helpers';
+
 function MovieInfo({movie}) {
   return (
     <Wrapper backdrop={movie.backdrop_path}>
@@ -32,7 +35,7 @@ function MovieInfo({movie}) {
                 <div className='rating-directors'>
                     <div>
                         <h3>NOTATION</h3>
-                        <p className='score'>{movie.vote_average}</p>
+                        <p className='score'>{roundsToFirstDecimal(movie.vote_average)}</p>
                     </div>
                     <div className='director'>
                         <h3>DIRECTEUR{movie.directors.length > 1 ? 'S' : ''}</h3>

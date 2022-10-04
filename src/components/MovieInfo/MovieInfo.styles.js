@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   background-position: center;
   padding: 40px 20px;
   animation: animateMovieInfo 1s;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 250px);
 
 
   @keyframes {
