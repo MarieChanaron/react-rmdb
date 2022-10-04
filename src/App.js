@@ -19,9 +19,9 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/:movieId' element={<Movie />} />
-        <Route path='/*' element={<NotFound />} />
+        <Route path='/react-rmdb' element={<Home />} />
+        <Route path='react-rmdb/:movieId' exact element={<Movie />} />
+        <Route path='react-rmdb/*' element={<NotFound />} />
       </Routes>
       <GlobalStyle />
     </Router>
