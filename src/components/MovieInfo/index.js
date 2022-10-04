@@ -38,7 +38,7 @@ function MovieInfo({movie}) {
                         <p className='score'>{roundsToFirstDecimal(movie.vote_average)}</p>
                     </div>
                     <div className='director'>
-                        <h3>DIRECTEUR{movie.directors.length > 1 ? 'S' : ''}</h3>
+                        <h3>REALISATEUR{movie.directors.length > 1 ? 'S' : ''}</h3>
                         {movie.directors.map(director => (
                             <p key={director.credit_id}>{director.name}</p>
                         ))}
