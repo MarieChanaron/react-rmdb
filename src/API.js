@@ -17,10 +17,10 @@ const defaultConfig = {
 
 const apiSettings = {
   fetchMovies: async (searchTerm, page) => {
-    alert('fetching movies');
     const endpoint = searchTerm
     ? `${SEARCH_BASE_URL}${searchTerm}&page=${page}` 
-    : `${POPULAR_BASE_URL}&page=${page}`;            
+    : `${POPULAR_BASE_URL}&page=${page}`;
+    alert(endpoint);         
     return await (await fetch(endpoint)).json();
   },
   fetchMovie: async movieId => {
