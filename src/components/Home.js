@@ -21,8 +21,6 @@ function Home() {
 
     const { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } = useHomeFetch();
 
-    console.log(state);
-
     if(error) return <div>Un problème s'est produit...</div>
 
     return (
