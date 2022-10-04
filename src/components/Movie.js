@@ -19,6 +19,9 @@ import { useMovieFetch } from "../hooks/useMovieFetch";
 import NoImage from "../images/no_image.jpg";
 
 function Movie() {
+
+  console.log('this is the movie page');
+
   const { movieId } = useParams();
   const { state: movie, loading, error } = useMovieFetch(movieId);
 
