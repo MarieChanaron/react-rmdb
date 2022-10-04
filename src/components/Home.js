@@ -19,6 +19,8 @@ import NoImage from '../images/no_image.jpg';
 
 function Home() {
 
+    alert('This is the homepage');
+
     const { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } = useHomeFetch();
 
     if(error) return <div>Un problème s'est produit...</div>
