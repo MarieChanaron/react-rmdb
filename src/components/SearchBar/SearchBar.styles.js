@@ -40,5 +40,9 @@ export const Content = styled.div`
         :focus {
             outline: none;
         }
+
+        @media screen and (max-width: 720px) {
+            font-size: var(--fontMed);
+        }
     }
 `;

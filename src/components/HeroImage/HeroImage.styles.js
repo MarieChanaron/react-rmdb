@@ -19,6 +19,10 @@ export const Wrapper = styled.div`
         from {opacity: 0;}
         to {opacity: 1;}
     }
+
+    @media screen and (max-width: 720px) {
+        height: 400px;
+    }
 `;
 
 export const Content = styled.div`
