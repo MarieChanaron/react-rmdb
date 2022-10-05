@@ -9,7 +9,7 @@ function BreadCrumb({movieTitle}) {
   return (
     <Wrapper id="breadcrumb-wrapper">
         <Content>
-            <Link to='/react-rmdb' className='link' style={{textDecoration: 'none'}}>
+            <Link to='/' className='link' style={{textDecoration: 'none'}}>
                 <span>Home</span>
             </Link>
             <span>|</span>

@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path='/' exact element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/:movieId' exact element={<Movie />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
