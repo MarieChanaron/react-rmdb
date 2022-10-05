@@ -10,7 +10,7 @@ function Header() {
     return (
         <Wrapper>
             <Content>
-                <Link to='react-rmdb/'>
+                <Link to='/'>
                     <LogoImg src={RMDBLogo} alt='rmdb-logo' />
                 </Link>
                 <TMDBLogoImg src={TMDBLogo} alt='tmdb-logo' />
