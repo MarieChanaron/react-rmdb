@@ -1,5 +1,7 @@
 # React application using The Movie Database API
 
+Link to the website: https://bddfilms.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
